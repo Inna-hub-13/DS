@@ -259,16 +259,17 @@ set* symmetric_difference(const set* A, const set* B) {
 
     if (!set_D2) {
 
-        free(set_D1);
+        free_set(set_D1);
         return NULL;
     }
     
     set * SD = unions(set_D1, set_D2);
 
-    free(set_D1);
-    free(set_D2);
+    free_set(set_D1);
+    free_set(set_D2);
     
     return SD;
 
 }
+
 
