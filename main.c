@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include "set.h"
-#define MAX_INTERVAL 50
-
 
 int main() {
 
@@ -273,3 +271,4 @@ set* symmetric_difference(const set* A, const set* B) {
     return SD;
 
 }
+
