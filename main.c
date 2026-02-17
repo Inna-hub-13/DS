@@ -264,6 +264,12 @@ set* symmetric_difference(const set* A, const set* B) {
         free(set_D1);
         return NULL;
     }
+    
+    set * SD = unions(set_D1, set_D2);
 
-    return unions(set_D1, set_D2);
+    free(set_D1);
+    free(set_D2);
+    
+    return SD;
+
 }
